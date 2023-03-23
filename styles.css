@@ -4,6 +4,10 @@ body {
   background-color: rgb(44, 41, 38);
 }
 
+:hover {
+  --color-add-to-cart: rgb(44, 228, 182);
+}
+
 a {
   text-decoration: none;
 }
@@ -113,7 +117,7 @@ main h1 {
 
 #latest-products ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 1rem;
   margin: 0;
   padding: 0;
@@ -150,7 +154,7 @@ main h1 {
 }
 
 .btn:hover {
-  background-color: rgb(221, 134, 34);
+  background-color: var(--color-add-to-cart);
 }
 
 @-webkit-keyframes roll-in-left {
